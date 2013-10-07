@@ -59,6 +59,25 @@ describe Backup::Storage::Baidu do
 
     it 'should transfer the package files' do
       pending
+      # storage.expects(:remote_path_for).in_sequence(s).with(package).
+      #     returns('remote/path')
+      # package.stubs(:filenames).returns(['backup.tar.enc-aa','backup.tar.enc-ab'])
+      # # first yield
+      # Backup::Logger.expects(:info).in_sequence(s).with(
+      #   "Storing 'remote/path/backup.tar.enc-aa'..."
+      # )
+      # connection.expects(:put).in_sequence(s).with(
+      #   File.join('remote/path', 'backup.tar.enc-aa'), File.join('/local/path', 'backup.tar.enc-aa')
+      # )
+      # # second yield
+      # Backup::Logger.expects(:info).in_sequence(s).with(
+      #   "Storing 'remote/path/backup.tar.enc-ab'..."
+      # )
+      # connection.expects(:put).in_sequence(s).with(
+      #   File.join('remote/path', 'backup.tar.enc-ab'), File.join('/local/path', 'backup.tar.enc-ab')
+      # )
+
+      # storage.send(:transfer!)
     end
   end # describe '#transfer!'
 
