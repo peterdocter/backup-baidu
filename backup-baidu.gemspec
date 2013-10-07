@@ -20,7 +20,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rspec", "~> 2.6"
 
   spec.add_dependency "backup", ">= 3.7.0"
-  spec.add_dependency "api4baidu", ">=1.0.0"
+  spec.add_dependency "api4baidu", ">= 1.0.1"
   spec.add_dependency "oauth2", ["~> 0.9.2"]
   spec.add_dependency "json", ["~> 1.8.0"]
 end
