@@ -1,6 +1,8 @@
+require 'rubygems' if RUBY_VERSION < '1.9'
 require 'bundler/setup'
 require 'backup'
 require 'backup-baidu'
+
 require 'rspec/autorun'
 
 RSpec.configure do |config|

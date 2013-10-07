@@ -7,9 +7,9 @@ Gem::Specification.new do |spec|
   spec.version       = "0.1.0"
   spec.authors       = ["DylanDeng"]
   spec.email         = ["dylan@beansmile.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.description   = %q{pan.baidu.com Storage support for Backup}
+  spec.summary       = %q{pan.baidu.com Storage support for Backup}
+  spec.homepage      = "https://github.com/lanrion/backup-baidu"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)

@@ -32,64 +32,6 @@ describe Backup::Storage::Baidu do
       storage.storage_id.should == 'my_storage_id'
     end
 
-    # context 'when no pre-configured defaults have been set' do
-    #   it 'should use the values given' do
-    #     storage.api_key.should      == 'my_access_id'
-    #     storage.api_secret.should   == 'qjhCau3p8EIPmZKAHyEArKn19H74FtEj'
-    #     storage.path.should         == 'backups'
-
-    #     storage.storage_id.should be_nil
-    #     storage.keep.should       == 5
-    #   end
-
-    #   it 'should use default values if none are given' do
-    #     storage = Backup::Storage::Baidu.new(model)
-    #     storage.api_key.should      be_nil
-    #     storage.api_secret.should   be_nil
-    #     storage.path.should         == 'backups'
-
-    #     storage.storage_id.should be_nil
-    #     storage.keep.should       be_nil
-    #   end
-    # end # context 'when no pre-configured defaults have been set'
-
-    # context 'when pre-configured defaults have been set' do
-    #   before do
-    #     Backup::Storage::Baidu.defaults do |s|
-    #       s.api_key      = 'some_api_key'
-    #       s.api_secret   = 'qjhCau3p8EIPmZKAHyEArKn19H74FtEj'
-    #       s.path         = 'some_path'
-    #       s.keep         = 15
-    #     end
-    #   end
-
-    #   it 'should use pre-configured defaults' do
-    #     storage = Backup::Storage::Baidu.new(model)
-
-    #     storage.api_key.should      == 'some_api_key'
-    #     storage.api_secret.should   == 'qjhCau3p8EIPmZKAHyEArKn19H74FtEj'
-    #     storage.path.should         == 'some_path'
-
-    #     storage.storage_id.should be_nil
-    #     storage.keep.should       == 15
-    #   end
-
-    #   it 'should override pre-configured defaults' do
-    #     storage = Backup::Storage::Baidu.new(model) do |s|
-    #       s.api_key      = 'new_api_key'
-    #       s.api_secret   = 'new_api_secret'
-    #       s.path         = 'new_path'
-    #       s.keep         = 10
-    #     end
-
-    #     storage.api_key.should      == 'new_api_key'
-    #     storage.api_secret.should   == 'new_api_secret'
-    #     storage.path.should         == 'new_path'
-
-    #     storage.storage_id.should be_nil
-    #     storage.keep.should       == 10
-    #   end
-    # end # context 'when pre-configured defaults have been set'
   end # describe '#initialize'
 
   describe '#connection' do
