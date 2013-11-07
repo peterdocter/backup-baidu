@@ -36,6 +36,7 @@ module Backup
 
       def save_session(token)
         @access_token = token
+        FileUtils.mkdir_p(Config.cache_path) unless File.directory?(Config.cache_path)
         File.open(cached_file,"w") do |f|
           f.puts @access_token.to_hash.to_json
         end
