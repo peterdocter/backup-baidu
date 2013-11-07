@@ -1,6 +1,6 @@
 # Backup::Baidu
 
-Thanks:  https://github.com/mclee/backup-baidu
+Thanks Mclee to fix bug:  https://github.com/mclee/backup-baidu
 
 This Gem is aimed to provide a plugin for Backup, using Baidu's PCS (百度云盘) as storage.
 
